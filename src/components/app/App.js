@@ -1,6 +1,4 @@
-import React, { useEffect } from "react";
-import { connect } from "react-redux";
-import { pegaDados} from "../../actions";
+import React from "react";
 import './app.css'
 import InformacoesAtuais from "../InformacoesAtuais/InformacoesAtuais";
 import CardsSemana from "../cardsSemana/CardsSemana";
@@ -8,12 +6,8 @@ import Destaques from "../destaques/Destaques";
 import ProcurarCidade from "../procurarCidade/ProcurarCidade";
 import '../responsividade.css'
 
-const App = (props) => {
+const App = () => {
   
-  useEffect(() => {
-    props.pegaDados()
-  }, [])
-
   return (
     <div className="app">
       <InformacoesAtuais />
@@ -29,9 +23,4 @@ const App = (props) => {
   );
 }
 
-const mapStateToProps = (state) => {
-  console.log('state', state)
-  return state
-}
-
-export default connect(mapStateToProps, { pegaDados })(App);
+export default (App);

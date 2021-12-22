@@ -30,7 +30,6 @@ const Destaques = ({ dadosApi }) => {
         setSunset(string)
         string = sunrise.replace(' am', '')
         setSunrise(string)
-        console.log('sunset', sunset)
     }
 
     return (

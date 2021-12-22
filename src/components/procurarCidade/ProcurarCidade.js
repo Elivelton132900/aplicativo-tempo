@@ -31,16 +31,13 @@ const ProcurarCidade = ({ dadosApi, pegaDados }) => {
             'weather?key=6a79cccd&city_name=brasilia': 'Brasília'
         }
         const valorItemClicado = e.target.textContent
-        console.log('valor item clicado', valorItemClicado)
         const valorExistente = Object.values(urls).indexOf(valorItemClicado) !== -1 ? true : false
-        console.log('valor existente?', valorExistente)
         if (valorExistente) {
             const spinner = document.querySelector('.spinner')
             spinner.style.display = 'block'
             let url = Object.entries(urls).map(item => item[1] === valorItemClicado ? item[0] : '')
             // limpando linhas ''
             url = url.filter(item => item !== '')
-            console.log('url para string',url.toString())
             pegaDados(url.toString())
             trocaTela()
         }
