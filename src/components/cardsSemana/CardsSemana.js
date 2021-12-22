@@ -45,8 +45,8 @@ const CardsSemana = ({dadosApi, pegaDados}) => {
     }, [dadosApi])
 
     const RenderizaCards = previsaoSemana.map((item, id) => {
-        if (id <= 4) {
-            const dia = id === 0 ? 'Amanhã' : `${item.weekday}, ${item.date.split('/')[0]} ${meses[item.date.split('/')[1] - 1]}`
+        if (id >= 1 && id <= 5) {
+            const dia = id === 1 ? 'Amanhã' : `${item.weekday}, ${item.date.split('/')[0]} ${meses[item.date.split('/')[1] - 1]}`
             return (
                 <div key={item.date} className="containerCards">
                     <h2>{dia}</h2>
