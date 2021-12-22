@@ -10,17 +10,17 @@ const ProcurarCidade = ({ pegaDados }) => {
     const aoProcurar = () => {
         const spinner = document.querySelector('.spinner')
         spinner.style.display = 'block'
-        const url = 'weather?key=bb144fdd&city_name=' + input
+        const url = 'weather?format=json-cors&key=bb144fdd&city_name=' + input
         pegaDados(url)
         setInput('')
         trocaTela()
     }
-    
+
     const novaPesquisa = (e) => {
         const urls = {
-            'weather?key=bb144fdd&city_name=sp': 'São Paulo',
-            'weather?key=bb144fdd&city_name=riodejaneiro': 'Rio de Janeiro',
-            'weather?key=bb144fdd&city_name=brasilia': 'Brasília'
+            'weather?format=json-cors&key=bb144fdd&city_name=sp': 'São Paulo',
+            'weather?format=json-cors&key=bb144fdd&city_name=riodejaneiro': 'Rio de Janeiro',
+            'weather?format=json-cors&key=bb144fdd&city_name=brasilia': 'Brasília'
         }
         const valorItemClicado = e.target.textContent
         const valorExistente = Object.values(urls).indexOf(valorItemClicado) !== -1 ? true : false
