@@ -4,9 +4,6 @@ import './cardssemana.css'
 import './descricaoTempoMiniatura.css'
 import { pegaDados } from "../../actions";
 
-
-const semana = ["Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira", "Sábado"]
-
 const condicaoTempoLista = {
     'storm': 'Thunderstom',
     'snow': 'Snow',
