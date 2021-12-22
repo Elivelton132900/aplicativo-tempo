@@ -37,7 +37,7 @@ Para clonar e rodar essa aplicação você precisará do [Git](https://git-scm.c
 
 ```bash
 # Clone esse repositório
-$ git clone https://github.com/your-user-name/your-project-name
+$ git clone https://github.com/Elivelton132900/aplicativo-tempo
 
 # Install dependencies
 $ npm install
