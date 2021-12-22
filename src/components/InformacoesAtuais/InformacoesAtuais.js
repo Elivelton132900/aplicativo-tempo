@@ -72,7 +72,7 @@ const InformacoesAtuais = ({ dadosApi, pegaDados }) => {
                 })
             })
             promise.then(function (coordenadas) {
-                pegaDados(`weather?key=bb144fdd &lat=${coordenadas.lat}&lon=${coordenadas.lon}&user_ip=remote`)
+                pegaDados(`weather?format=json-cors&key=bb144fdd &lat=${coordenadas.lat}&lon=${coordenadas.lon}&user_ip=remote`)
             })
         } else {
             window.alert('Opção não disponível para esse navegador.')
