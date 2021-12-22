@@ -1,0 +1,202 @@
+/* Tela Esquerda */
+@media only screen and (max-width: 1254px) {
+    .form button {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 1110px) {
+    .containerCards .containerMinMax {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (max-height: 600px) {
+    .containerInfosSemana {
+        margin-top: 0;
+    }
+
+    .temperaturaAgora {
+        margin-bottom: 7%;
+    }
+
+    .descricaoTempo {
+        margin-bottom: 10%;
+    }
+}
+
+@media only screen and (max-width: 890px) {
+    .containerCards {
+        width: 17.2%;
+    }
+
+    .containerCardDestaques {
+        margin-right: auto;
+        width: 46%;
+    }
+
+
+    .containerCardDestaques .cabecalhoCard {
+        font-size: 1.3em;
+    }
+
+    .containerCardDestaques:nth-child(1) h2, h3 {
+        text-align: center;
+    }
+
+    .destaqueCabecalho {
+        margin-top: 7%;
+    }
+}
+
+
+
+@media only screen and (max-width: 660px) {
+    .containerCards h2 {
+        font-size: 0.8em;
+    }
+
+    progress {
+        max-width: 100px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .app {
+        display: block;
+        min-width: 100vw;
+        min-height: 100vw;
+    }
+
+    .creditosContainer {
+        min-width: 100vw;
+    }
+
+    .creditos {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: 25%;
+    }
+
+    /* Procurar cidade e Tela inicial */    
+
+    .containerProcurarCidade, .containerInformacoesAtuais {
+        min-width: 100vw;
+        min-height: 100vh;
+        margin-bottom: 1vh;
+    }
+
+    .inputEBotao, .form {
+        margin-top: 0;
+    }
+
+    .inputEBotao button, .form button, .form input, .form i {
+        margin-top: 10%;
+    }
+
+    .inputEBotao {
+        justify-content: space-between;
+        margin: 0 8%;
+    }
+
+    .ilustracao {
+        position: static;
+    }
+
+    .tempoCondicao {
+        height: 40%;
+        margin-top: 7%;
+    }
+
+    .nuvem1, .nuvem2, .nuvem3, .nuvem4 {
+        position: absolute;
+    }
+
+    .nuvem1 {
+        left: 0;
+    }
+    .nuvem2 {
+        right: 0;
+    }
+    .nuvem3 {
+        top: 25%;
+        left: 0;
+    }
+    .nuvem4 {
+        top: 25%;
+        right: 0;
+    }
+
+    .colunaInfos {
+        margin-top: 45%;
+    }
+
+    .descricaoTempo{
+        margin-top: 2%;
+        font-size: 24px;
+        margin-bottom: 12%;
+    }
+
+    .local {
+        margin-top: 5%;
+    }
+
+    .form {
+        min-height: 200px;
+    }
+
+    .form input {
+        height: 50px;
+    }
+
+    .form button {
+        height: 54px;
+    }
+
+    .containerOpcoesDefinidas {
+        margin-bottom: 10%;
+        min-height: 60px;
+    }
+
+    .containerProcurarCidade i {
+        z-index: 100;
+        margin-right: 2.5%;
+    }
+
+    /* Cards Semana */
+
+    .containerInfosSemana {
+        flex-wrap: wrap;
+        min-height: 100vh;
+    }
+
+    .containerCards {
+        width: 43%;
+        margin-left: 0;
+        min-height: 29vh;
+        margin-top: -1vh;
+    }
+
+    .tempoCondicaoMiniatura {
+        position: relative;
+        width: 80px;
+        height: 80px;
+    }
+
+    .containerMinMax {
+        display: flex;
+    }
+
+    /* destaques do dia */
+
+    .containerCardDestaques {
+        width: 90%;
+        height: 204px;
+    }
+}

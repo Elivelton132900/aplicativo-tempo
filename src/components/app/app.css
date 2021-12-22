@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-width: 100vw;
+    min-height: 100vh;
+    font-family: 'Raleway', sans-serif; 
+}
+
+.app {
+    background-color: #100E1D;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+.containerTelaDireita {
+    width: 100%;
+}
+
+.creditosContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.creditos {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #3C47E9;
+    position: absolute;
+    top: 94%;
+    left: 50%;
+}

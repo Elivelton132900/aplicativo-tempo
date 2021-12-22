@@ -1,0 +1,80 @@
+.containerProcurarCidade {
+    min-height: 100%;
+    width: 25%;
+    min-width: 231px;
+    background-color: #1E213A;
+    position: relative;
+    display: none;
+}
+
+.form {
+    display: flex;
+    margin-top: 53px;
+    height: 15%;
+    position: relative;
+    justify-content: center;
+}
+
+.form input {
+    padding-left: 2.8em;
+    width: 60%;
+    height: 26%;
+    background-color: #1E213A;
+    border: 1px solid #E7E7EB;
+    color: #616475;
+    transition: 300ms ease;
+    font-size: 15px;
+}
+
+.form button {
+    border: none;
+    height: 29%;
+    color: #E7E7EB;
+    background-color: #3C47E9;
+    margin-left: 3%;
+    width: 20%;
+    cursor: pointer;
+}
+
+.fa-search {
+    color: #616475;
+    position: absolute;
+    left: 6%;
+    top: 10%;
+}
+
+.form input:focus {
+    outline: none;
+    border: 1px solid #3C47E9;
+    cursor: pointer;
+}
+
+.opcoesDefinidas {
+    height: 75%;
+    margin-left: 2%;
+    color: #E7E7EB;
+    font-size: 16px;
+}
+
+.containerOpcoesDefinidas {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    height: 10%;
+    margin-bottom: 5%;
+    padding-left: 2%;
+}
+
+.containerOpcoesDefinidas:hover {
+    border: 1px solid #616475;
+    cursor: pointer;
+}
+
+.fa-times-circle {
+    font-size: 30px;
+    color: #E7E7EB;
+    position: absolute;
+    right: 2%;
+    margin-top: 2%;
+    cursor: pointer;
+}

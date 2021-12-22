@@ -1,0 +1,52 @@
+.tempoCondicaoMiniatura {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 40%;
+    position: relative;
+    top: 0px;
+}
+
+.Thunderstorm {
+    background-image: url('../../assets/Thunderstorm.png');
+}
+
+.Snow {
+    background-image: url('../../assets/Snow.png');
+}
+
+.Hail {
+    background-image: url('../../assets/Hail.png');
+}
+
+.LightRain {
+    background-image: url('../../assets/LightRain.png');
+}
+
+.Clear {
+    background-image: url('../../assets/Clear.png');
+}
+/* clear_night */
+.Lua {
+    background-image: url('../../assets/Lua.png');
+}
+
+.HeavyCloud {
+    background-image: url('../../assets/HeavyCloud.png');
+}
+
+.cloudly_day {
+    background-image: url('../../assets/HeavyCloud.png');
+}
+
+.cloudly_night {
+    background-image: url('../../assets/HeavyCloud.png');
+}
+
+.none_day {
+    background-image: url('../../assets/Clear.png');
+}
+
+.none_night {
+    background-image: url('../../assets/Lua.png');
+}

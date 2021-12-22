@@ -1,0 +1,114 @@
+.containerInformacoesAtuais {
+    background-color: #1E213A;
+    width: 25%;
+    min-width: 231px;
+}
+
+.inputEBotao {
+    font-size: 16px;
+    display: flex;
+    margin-top: 53px;
+    justify-content: space-around;
+}
+
+.inputEBotao .botaoInput {
+    font-size: 1em;
+    border: none;
+    background-color: #6E707A;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #E7E7EB;
+    width: 161px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.inputEBotao .imagem {
+    border-radius: 50%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 40px;
+    height: 40px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    cursor: pointer;
+}
+
+.inputEBotao .imagem .icon {
+    background-image: url('../../assets/crosshair-svgrepo-com.svg');
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.ilustracao {
+    margin-top: 5%;
+    width: 100%;
+    height: 30%; 
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.nuvem1, .nuvem2, .nuvem3, .nuvem4 {
+    background-image: url('../../assets/cloudy.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 35%;
+    height: 60%;
+}
+
+
+.colunaInfos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.numero {
+    color: #E7E7EB;
+}
+
+.temperaturaAgora {
+    margin-bottom: 22%;
+}
+
+.temperaturaAgora .numero {
+    font-size: 144px;
+}
+
+.celsius {
+    font-size: 50px;
+    color: #E7E7EB
+}
+
+.descricaoTempo {
+    margin-bottom: 30%;
+    color: #A09FB1;
+    font-weight: 600;
+}
+
+.dataContainer {
+    color: #88869D;
+}
+
+.after::after {
+    content: '•';
+    margin: 0 16px;
+}
+
+.local {
+    color: #88869D;
+    display: flex;
+    justify-content: center;
+    margin-top: 12%;
+}
+
+.fa-map-marker-alt {
+    margin-right: 9px;
+}
