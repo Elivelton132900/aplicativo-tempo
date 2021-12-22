@@ -5,8 +5,6 @@ export const pegaDados = (url) => async (dispatch) => {
 }
 
 const _pegaDados = async(url, dispatch) => {
-    console.log('url recebida', url)
     const response = await apiTempo.get(url)
-    console.log(response)
     dispatch({type: 'PEGA_DADOS', payload: response})
 }

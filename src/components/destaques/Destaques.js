@@ -1,4 +1,3 @@
-import { min, stubArray } from "lodash";
 import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
 import { pegaDados } from "../../actions";

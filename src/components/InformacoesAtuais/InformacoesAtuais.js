@@ -47,7 +47,7 @@ const InformacoesAtuais = ({ dadosApi, pegaDados }) => {
     const [mes] = useState(meses[data.getMonth()])
 
     useEffect(() => {
-        pegaDados('weather?format=json-cors&key=6a79cccd')
+        pegaDados('weather?format=json-cors&key=e165516e')
     }, [pegaDados])
 
     useEffect(() => {
@@ -72,7 +72,7 @@ const InformacoesAtuais = ({ dadosApi, pegaDados }) => {
                 })
             })
             promise.then(function (coordenadas) {
-                pegaDados(`weather?key=6a79cccd&lat=${coordenadas.lat}&lon=${coordenadas.lon}&user_ip=remote`)
+                pegaDados(`weather?key=e165516e&lat=${coordenadas.lat}&lon=${coordenadas.lon}&user_ip=remote`)
             })
         } else {
             window.alert('Opção não disponível para esse navegador.')

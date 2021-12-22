@@ -3,22 +3,14 @@ import { connect } from 'react-redux'
 import { pegaDados } from "../../actions";
 import './procurarcidade.css'
 
-const ProcurarCidade = ({ dadosApi, pegaDados }) => {
+const ProcurarCidade = ({ pegaDados }) => {
 
     const [input, setInput] = useState('')
-    const spinnerCidade = document.querySelector('.spinnerCidade')
-
-    const mostraSpinnerCidade = () => {
-        if (spinnerCidade !== null) {
-            const spinnerCidade = document.querySelector('.spinnerCidade')
-            spinnerCidade.style.display = 'block'
-        }
-    }
 
     const aoProcurar = () => {
         const spinner = document.querySelector('.spinner')
         spinner.style.display = 'block'
-        const url = 'weather?key=6a79cccd&city_name=' + input
+        const url = 'weather?key=e165516e&city_name=' + input
         pegaDados(url)
         setInput('')
         trocaTela()
@@ -26,9 +18,9 @@ const ProcurarCidade = ({ dadosApi, pegaDados }) => {
 
     const novaPesquisa = (e) => {
         const urls = {
-            'weather?key=6a79cccd&city_name=sp': 'São Paulo',
-            'weather?key=6a79cccd&city_name=riodejaneiro': 'Rio de Janeiro',
-            'weather?key=6a79cccd&city_name=brasilia': 'Brasília'
+            'weather?key=e165516e&city_name=sp': 'São Paulo',
+            'weather?key=e165516e&city_name=riodejaneiro': 'Rio de Janeiro',
+            'weather?key=e165516e&city_name=brasilia': 'Brasília'
         }
         const valorItemClicado = e.target.textContent
         const valorExistente = Object.values(urls).indexOf(valorItemClicado) !== -1 ? true : false
@@ -53,7 +45,7 @@ const ProcurarCidade = ({ dadosApi, pegaDados }) => {
 
     return (
         <div className='containerProcurarCidade'>
-            <i class="far fa-times-circle" onClick={trocaTela}></i>
+            <i className="far fa-times-circle" onClick={trocaTela}></i>
             <div className='form'>
                 <i className="fas fa-search"></i>
                 <input
